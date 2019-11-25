@@ -1,0 +1,45 @@
+﻿  Action.cpp
+  Session.cpp
+  user.cpp
+C:\Users\elikk\Desktop\Assignment1\source\user.cpp(78,9): warning C4018: '<': signed/unsigned mismatch
+C:\Users\elikk\Desktop\Assignment1\source\user.cpp(93,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\elikk\Desktop\Assignment1\source\user.cpp(111,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\elikk\Desktop\Assignment1\source\user.cpp(123,21): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): error C2679: binary '==': no operator found which takes a right-hand operand of type 'const _Ty' (or there is no acceptable conversion)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): error C2679:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): error C2679:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): error C2679:             _Ty=Watchable
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): error C2679:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\system_error(232,24): message : could be 'bool std::operator ==(const std::error_condition &,const std::error_condition &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\system_error(227,24): message : or       'bool std::operator ==(const std::error_condition &,const std::error_code &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\system_error(222,24): message : or       'bool std::operator ==(const std::error_code &,const std::error_condition &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\system_error(217,24): message : or       'bool std::operator ==(const std::error_code &,const std::error_code &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\exception(290,24): message : or       'bool std::operator ==(const std::exception_ptr &,std::nullptr_t) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\exception(286,24): message : or       'bool std::operator ==(std::nullptr_t,const std::exception_ptr &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\exception(282,24): message : or       'bool std::operator ==(const std::exception_ptr &,const std::exception_ptr &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): message : or       'built-in C++ operator==(Watchable *, Watchable *)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): message : while trying to match the argument list '(Watchable *, const _Ty)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): message :             _Ty=Watchable
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2816): message : see reference to function template instantiation '_InIt std::_Find_unchecked1<_InIt,_Ty>(_InIt,const _InIt,const _Ty &,std::false_type)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2816): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2816): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2816): message :             _InIt=Watchable **,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2816): message :             _Ty=Watchable
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2816): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2822): message : see reference to function template instantiation '_InIt std::_Find_unchecked<Watchable**,_Ty>(const _InIt,const _InIt,const _Ty &)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2822): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2822): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2822): message :             _InIt=Watchable **,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2822): message :             _Ty=Watchable
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2822): message :         ]
+  Watchable.cpp
+  Generating Code...
+C:\Users\elikk\Desktop\Assignment1\source\user.cpp(31): message : see reference to function template instantiation '_InIt std::find<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,Watchable>(_InIt,const _InIt,const Watchable &)' being compiled
+C:\Users\elikk\Desktop\Assignment1\source\user.cpp(31): message :         with
+C:\Users\elikk\Desktop\Assignment1\source\user.cpp(31): message :         [
+C:\Users\elikk\Desktop\Assignment1\source\user.cpp(31): message :             _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Watchable *>>>,
+C:\Users\elikk\Desktop\Assignment1\source\user.cpp(31): message :             _Ty=Watchable *
+C:\Users\elikk\Desktop\Assignment1\source\user.cpp(31): message :         ]
