@@ -2,4 +2,10 @@ out/
 Debug/
 .vs/
 CMakeLists.txt
+<<<<<<< HEAD
 cmake-build-debug/
+=======
+/cmake-build-debug
+/out
+/Debug
+>>>>>>> 04554111adabf85d76536229030ec6e3cdbdc268

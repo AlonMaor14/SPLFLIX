@@ -18,6 +18,7 @@ public:
 	User* getActiveUser();
 	std::vector<BaseAction*> getActionsLog();
 	std::unordered_map<std::string, User*> getUserMap();
+	void setActiveUser(User* u);
 	std::string getCommand();
 
 

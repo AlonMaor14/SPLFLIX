@@ -21,6 +21,7 @@ protected:
 	void complete();
 	void error(const std::string& errorMsg);
 	std::string getErrorMsg() const;
+	void setErrorMsg(std::string error);
 private:
 	std::string errorMsg;
 	ActionStatus status;

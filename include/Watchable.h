@@ -20,6 +20,7 @@ public:
 	int getLength();
 	void setLength(int newLength);
 	std::vector<std::string> getTags();
+	virtual void printMe() = 0;
 
 private:
     const long id;
@@ -32,6 +33,7 @@ public:
     Movie(long id, const std::string& name, int length, const std::vector<std::string>& tags);
     virtual std::string toString() const;
     virtual Watchable* getNextWatchable(Session&) const;
+	virtual void printMe();
 private:
     std::string name;
 };
@@ -42,7 +44,7 @@ public:
     Episode(long id, const std::string& seriesName,int length, int season, int episode ,const std::vector<std::string>& tags);
     virtual std::string toString() const;
     virtual Watchable* getNextWatchable(Session&) const;
-
+	virtual void printMe();
 	void setNextEpisodeId(int id);
 
 	//void setNextEpisodeId(Episode *eps);

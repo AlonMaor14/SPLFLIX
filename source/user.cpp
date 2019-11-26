@@ -12,10 +12,16 @@ class Session;
 using namespace std;
 
 User::User(const std::string& name) :name(name) {
+	history = vector<Watchable*>();
 }; //constructor
 
 User::User(User& other) :name(other.name) {
-}; //copy constructor
+}
+User::~User(){
+	name = nullptr;
+	history.clear(); 
+}
+; //copy constructor
 
 
 
@@ -25,6 +31,14 @@ std::string User::getName() const {
 
 std::vector<Watchable*> User::get_history() const {
 	return history;
+}
+
+void User::setHistory(vector<Watchable*> his) {
+	history.clear();
+	for (int i = 0; i < his.size(); i++) {
+		Watchable* add (his.at(i));
+		history.push_back(add);
+	}
 }
 
 bool User::isInHistory(Watchable& content) {
@@ -63,7 +77,14 @@ Watchable* LengthRecommenderUser::getRecommendation(Session& s) {
 		}
 		return s.getContent()[indexPosition];
 	}
-};
+}
+void LengthRecommenderUser::duplicatMe(Session s,string name)
+{
+	LengthRecommenderUser newUser(name);
+	newUser.setHistory(history);
+	s.getUserMap().insert({ newUser.getName(), &newUser });
+}
+;
 
 RerunRecommenderUser::RerunRecommenderUser(const std::string& name) : User(name) {
 	i=0;
@@ -81,6 +102,13 @@ Watchable* RerunRecommenderUser::getRecommendation(Session& s) {
 			i = 0;
 		return toRecommend;
 	}
+}
+
+void RerunRecommenderUser::duplicatMe(Session s, string name)
+{
+	RerunRecommenderUser newUser = RerunRecommenderUser(name);
+	newUser.setHistory(history);
+	s.getUserMap().insert({ newUser.getName(), &newUser });
 }
 
 GenreRecommenderUser::GenreRecommenderUser(const std::string& name) : User(name) {
@@ -128,4 +156,11 @@ Watchable* GenreRecommenderUser::getRecommendation(Session& s) {
 		return toRecommend;
 	}
 
+}
+
+void GenreRecommenderUser::duplicatMe(Session s, string name)
+{
+	GenreRecommenderUser newUser = GenreRecommenderUser(name);
+	newUser.setHistory(history);
+	s.getUserMap().insert({ newUser.getName(), &newUser });
 }

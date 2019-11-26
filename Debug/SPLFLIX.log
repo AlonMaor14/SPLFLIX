@@ -1,45 +1,113 @@
-﻿  Action.cpp
+﻿  jser.cpp
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\Session.h(31,16): error C3646: 'command': unknown override specifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\Session.h(31,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(40,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(48,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(57,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\jser.cpp(13,18): error C2061: syntax error: identifier 'json'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\jser.cpp(18,2): error C2065: 'json': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\jser.cpp(18,7): error C2146: syntax error: missing ';' before identifier 'j'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\jser.cpp(18,7): error C2065: 'j': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\jser.cpp(20,7): error C2065: 'j': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\jser.cpp(22,13): error C2065: 'j': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\jser.cpp(24,17): error C2065: 'j': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\jser.cpp(26,17): error C2065: 'x': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\jser.cpp(27,11): error C2065: 'x': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\jser.cpp(31,19): error C2065: 'x': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\jser.cpp(32,19): error C2065: 'tag': undeclared identifier
+  Action.cpp
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\jser.cpp(34,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\Session.h(31,16): error C3646: 'command': unknown override specifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\Session.h(31,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(40,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(48,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(57,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(50): error C2259: 'LengthRecommenderUser': cannot instantiate abstract class
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(50): message : due to following members:
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(50): message : 'void User::duplicatMe(Session,std::string)': is abstract
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(25): message : see declaration of 'User::duplicatMe'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(50,34): error C2512: 'LengthRecommenderUser': no appropriate default constructor available
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(36,7): message : see declaration of 'LengthRecommenderUser'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(56): error C2259: 'RerunRecommenderUser': cannot instantiate abstract class
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(56): message : due to following members:
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(56): message : 'void User::duplicatMe(Session,std::string)': is abstract
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(25): message : see declaration of 'User::duplicatMe'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(56,33): error C2512: 'RerunRecommenderUser': no appropriate default constructor available
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(44,7): message : see declaration of 'RerunRecommenderUser'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(62): error C2259: 'GenreRecommenderUser': cannot instantiate abstract class
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(62): message : due to following members:
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(62): message : 'void User::duplicatMe(Session,std::string)': is abstract
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(25): message : see declaration of 'User::duplicatMe'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(62,33): error C2512: 'GenreRecommenderUser': no appropriate default constructor available
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(53,7): message : see declaration of 'GenreRecommenderUser'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(158,20): warning C4018: '<': signed/unsigned mismatch
+  Main.cpp
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Action.cpp(174,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\Session.h(31,16): error C3646: 'command': unknown override specifier
   Session.cpp
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\Session.h(31,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\Session.h(31,16): error C3646: 'command': unknown override specifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\Session.h(31,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(40,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(48,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(57,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(9,18): error C2061: syntax error: identifier 'json'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(15,2): error C2065: 'json': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(15,7): error C2146: syntax error: missing ';' before identifier 'j'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(15,7): error C2065: 'j': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(16,7): error C2065: 'j': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(24,9): error C2065: 'command': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(29): error C2259: 'LengthRecommenderUser': cannot instantiate abstract class
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(29): message : due to following members:
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(29): message : 'void User::duplicatMe(Session,std::string)': is abstract
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(25): message : see declaration of 'User::duplicatMe'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(31,9): error C2065: 'command': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(33,10): error C2065: 'command': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(34,22): error C2065: 'command': undeclared identifier
   user.cpp
-C:\Users\elikk\Desktop\Assignment1\source\user.cpp(78,9): warning C4018: '<': signed/unsigned mismatch
-C:\Users\elikk\Desktop\Assignment1\source\user.cpp(93,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\elikk\Desktop\Assignment1\source\user.cpp(111,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\elikk\Desktop\Assignment1\source\user.cpp(123,21): warning C4018: '<': signed/unsigned mismatch
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): error C2679: binary '==': no operator found which takes a right-hand operand of type 'const _Ty' (or there is no acceptable conversion)
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): error C2679:         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): error C2679:         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): error C2679:             _Ty=Watchable
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): error C2679:         ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\system_error(232,24): message : could be 'bool std::operator ==(const std::error_condition &,const std::error_condition &) noexcept'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\system_error(227,24): message : or       'bool std::operator ==(const std::error_condition &,const std::error_code &) noexcept'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\system_error(222,24): message : or       'bool std::operator ==(const std::error_code &,const std::error_condition &) noexcept'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\system_error(217,24): message : or       'bool std::operator ==(const std::error_code &,const std::error_code &) noexcept'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\exception(290,24): message : or       'bool std::operator ==(const std::exception_ptr &,std::nullptr_t) noexcept'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\exception(286,24): message : or       'bool std::operator ==(std::nullptr_t,const std::exception_ptr &) noexcept'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\exception(282,24): message : or       'bool std::operator ==(const std::exception_ptr &,const std::exception_ptr &) noexcept'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): message : or       'built-in C++ operator==(Watchable *, Watchable *)'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): message : while trying to match the argument list '(Watchable *, const _Ty)'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): message :         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): message :         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): message :             _Ty=Watchable
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2800,1): message :         ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2816): message : see reference to function template instantiation '_InIt std::_Find_unchecked1<_InIt,_Ty>(_InIt,const _InIt,const _Ty &,std::false_type)' being compiled
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2816): message :         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2816): message :         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2816): message :             _InIt=Watchable **,
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2816): message :             _Ty=Watchable
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2816): message :         ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2822): message : see reference to function template instantiation '_InIt std::_Find_unchecked<Watchable**,_Ty>(const _InIt,const _InIt,const _Ty &)' being compiled
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2822): message :         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2822): message :         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2822): message :             _InIt=Watchable **,
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2822): message :             _Ty=Watchable
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2822): message :         ]
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Session.cpp(34,40): error C2065: 'command': undeclared identifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\Include\User.h(40,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\Include\User.h(48,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\Include\User.h(57,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\Session.h(31,16): error C3646: 'command': unknown override specifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\Session.h(31,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(38,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(82,1): error C2511: 'void LengthRecommenderUser::duplicatMe(Session,std::string)': overloaded member function not found in 'LengthRecommenderUser'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\Include\User.h(36): message : see declaration of 'LengthRecommenderUser'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(83): error C2259: 'LengthRecommenderUser': cannot instantiate abstract class
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(83): message : due to following members:
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(83): message : 'void User::duplicatMe(Session,std::string)': is abstract
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\Include\User.h(25): message : see declaration of 'User::duplicatMe'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(84,28): error C2597: illegal reference to non-static member 'User::history'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(99,9): warning C4018: '<': signed/unsigned mismatch
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(108,1): error C2511: 'void RerunRecommenderUser::duplicatMe(Session,std::string)': overloaded member function not found in 'RerunRecommenderUser'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\Include\User.h(44): message : see declaration of 'RerunRecommenderUser'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(109): error C2259: 'RerunRecommenderUser': cannot instantiate abstract class
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(109): message : due to following members:
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(109): message : 'void User::duplicatMe(Session,std::string)': is abstract
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\Include\User.h(25): message : see declaration of 'User::duplicatMe'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(109,31): error C2512: 'RerunRecommenderUser': no appropriate default constructor available
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\Include\User.h(44,7): message : see declaration of 'RerunRecommenderUser'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(110,28): error C2597: illegal reference to non-static member 'User::history'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(121,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(139,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(151,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(162,1): error C2511: 'void GenreRecommenderUser::duplicatMe(Session,std::string)': overloaded member function not found in 'GenreRecommenderUser'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\Include\User.h(53): message : see declaration of 'GenreRecommenderUser'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(163): error C2259: 'GenreRecommenderUser': cannot instantiate abstract class
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(163): message : due to following members:
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(163): message : 'void User::duplicatMe(Session,std::string)': is abstract
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\Include\User.h(25): message : see declaration of 'User::duplicatMe'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(163,31): error C2512: 'GenreRecommenderUser': no appropriate default constructor available
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\Include\User.h(53,7): message : see declaration of 'GenreRecommenderUser'
   Watchable.cpp
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\user.cpp(164,28): error C2597: illegal reference to non-static member 'User::history'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\Session.h(31,16): error C3646: 'command': unknown override specifier
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\Session.h(31,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(40,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(48,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\include\User.h(57,44): error C2061: syntax error: identifier 'string'
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Watchable.cpp(56,20): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
-C:\Users\elikk\Desktop\Assignment1\source\user.cpp(31): message : see reference to function template instantiation '_InIt std::find<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,Watchable>(_InIt,const _InIt,const Watchable &)' being compiled
-C:\Users\elikk\Desktop\Assignment1\source\user.cpp(31): message :         with
-C:\Users\elikk\Desktop\Assignment1\source\user.cpp(31): message :         [
-C:\Users\elikk\Desktop\Assignment1\source\user.cpp(31): message :             _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Watchable *>>>,
-C:\Users\elikk\Desktop\Assignment1\source\user.cpp(31): message :             _Ty=Watchable *
-C:\Users\elikk\Desktop\Assignment1\source\user.cpp(31): message :         ]
+C:\Users\elikk\Desktop\Assignment1\SPLFLIX\source\Watchable.cpp(88,20): warning C4018: '<': signed/unsigned mismatch

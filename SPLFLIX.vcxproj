@@ -98,6 +98,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="jser.cpp" />
     <ClCompile Include="out\build\x64-debug\cmakefiles\3.15.19080502-msvc_2\compileridcxx\CMakeCXXCompilerId.cpp" />
     <ClCompile Include="out\build\x64-debug\cmakefiles\3.15.19080502-msvc_2\compileridc\CMakeCCompilerId.c" />
     <ClCompile Include="source\Action.cpp" />
@@ -108,9 +109,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Action.h" />
+    <ClInclude Include="include\json.hpp" />
     <ClInclude Include="include\Session.h" />
     <ClInclude Include="include\User.h" />
     <ClInclude Include="include\Watchable.h" />
+    <ClInclude Include="jser.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="out\build\x64-debug\cmakefiles\3.15.19080502-msvc_2\CMakeDetermineCompilerABI_C.bin" />

@@ -49,20 +49,49 @@ std::string Movie::toString() const {
 
 Watchable* Movie::getNextWatchable(Session&) const {
 	return nullptr;
-};
+}
+void Movie::printMe()
+{
+	cout << this->getId() << ". " << name << " " << this->getLength() << " minutes [";
+	for (int i = 0; i < getTags().size(); i++) {
+		if (i == getTags().size() - 1)
+			cout << getTags().at(i) << "]";
+		else {
+			cout << getTags().at(i) << ", ";
+		}
+	}
+}
+;
 
 Episode::Episode(long id, const std::string& seriesName, int length, int season, int episode, const std::vector<std::string>& tags) : Watchable(id, length, tags) {
 	this->seriesName = seriesName;
 	this->season = season;
 	this->episode = episode;
+	this->nextEpisodeId = -1;
 };
 
 std::string Episode::toString() const {
-	return seriesName;
+	return seriesName + " S" + std::to_string(season) +" E"+ std::to_string(episode);
 }
 Watchable* Episode::getNextWatchable(Session& s) const
 {
-	return s.getContent().at(nextEpisodeId);
+	if (nextEpisodeId != -1) {
+		return s.getContent().at(nextEpisodeId);
+	}
+	else
+		return nullptr;
+}
+
+void Episode::printMe()
+{
+	cout << this->getId() << ". " << seriesName << " S"<<season<<" E"<<episode<<" " << this->getLength() << " minutes [";
+	for (int i = 0; i < getTags().size(); i++) {
+		if (i == getTags().size() - 1)
+			cout << getTags().at(i) << "]";
+		else {
+			cout << getTags().at(i) << ", ";
+		}
+	}
 }
 
 void Episode::setNextEpisodeId(int id) {
@@ -73,4 +102,3 @@ void Episode::setNextEpisodeId(int id) {
 
 
 
-//void Episode::setNextEpisodeId(Episode *eps){)
