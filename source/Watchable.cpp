@@ -67,6 +67,7 @@ Episode::Episode(long id, const std::string& seriesName, int length, int season,
 	this->seriesName = seriesName;
 	this->season = season;
 	this->episode = episode;
+	
 	this->nextEpisodeId = -1;
 };
 
@@ -94,9 +95,13 @@ void Episode::printMe()
 	}
 }
 
-void Episode::setNextEpisodeId(int id) {
+void Episode::setNextEpisodeId(int id)
+{
 	nextEpisodeId = id;
+
 }
+
+
 
 
 

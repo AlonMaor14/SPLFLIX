@@ -5,12 +5,14 @@
 #include <unordered_map>
 #include <string>
 #include "Action.h"
+#include "json.hpp";
 
 class User;
 class Watchable;
 
 class Session{
 public:
+	void Session::jsonScanner(const std::string& configFilePath);
     Session(const std::string &configFilePath);
     ~Session();
     void start();

@@ -2,18 +2,62 @@
 #include "..\include\User.h"
 #include "..\include\Watchable.h"
 #include "..\include\Action.h"
-#include "../include/jser.h"
 #include <iostream>
 #include <fstream>
+#include "../include/json.hpp"
+
 using namespace std;
 using json = json;
 
 
-Session::Session(const std::string& configFilePath) {
-
-	std::ifstream i(configFilePath);
+void Session::jsonScanner(const std::string& configFilePath)
+{
+	std::ifstream fileReader(configFilePath);
 	json j;
-	i >> j;
+	fileReader >> j;
+	string convertionFromJson = j.dump(); //// explicit conversion to string
+	fileReader.close();
+	int id = 1;
+	for (auto& movie : j["movies"].items()) {//iterator on movies
+		string nameOfMovie = movie.value()["name"];
+		int lengthOfMovie = movie.value()["length"];
+		vector<string> tagsVectorOfMovie;
+		for (auto tag:movie.value()["tags"]){
+			tagsVectorOfMovie.push_back(tag.value());
+		}
+		Watchable* newMovie = new Movie(id, nameOfMovie, lengthOfMovie, tagsVectorOfMovie);
+		this->getContent().push_back(newMovie);
+		id++;
+	}
+	for (auto& tvShow : j["tv_series"].items()) {//iterator on tv shows
+		string nameOfTvShow = tvShow.value()["name"];
+		int lengthOfTvShow = tvShow.value()["length"];
+		int numOfSeason = 1;
+		vector<string> tagsVectorOfTvShow;
+		for (auto tag : tvShow.value()["tags"]) {//iterator on tags of tv show
+			tagsVectorOfTvShow.push_back(tag.value());
+		}
+		int totalNumOfSeasons = j["seasons"].size();
+		int numberOfEpisodes;
+		for (auto& seasonNumber : tvShow.value()["seasons"].items()) {
+			numberOfEpisodes = seasonNumber.value();
+			for (int currEpisode = 1; currEpisode <= numberOfEpisodes; currEpisode++) {//goes throw the episodes
+				Episode* newTvShow = new Episode(id, nameOfTvShow, numOfSeason, currEpisode, lengthOfTvShow, tagsVectorOfTvShow);//Check Why Episode Declaration only works
+				if (currEpisode==numberOfEpisodes && numOfSeason < totalNumOfSeasons) {//if last episode of the season
+					numOfSeason++;
+				}
+				newTvShow->setNextEpisodeId(id + 1);	
+				this->getContent().push_back(newTvShow);
+				id++;//if number of episodes is 0 than problem(id never changes)
+			}
+		}
+		
+	}
+}
+
+Session::Session(const std::string& configFilePath) {
+	jsonScanner(configFilePath);
+	
 	
 }
 
