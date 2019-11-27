@@ -14,14 +14,15 @@ using json = json;
 
 void jser::useJson()
 {
-	ifstream i("../inclide/config1.json");
-	json j ;
+	std::fstream i("../config1.json");
+	nlohmann::json j = nlohmann::json::pars;
+	nlohmann::json movies = j["movies"];
 	
 	i >> j;
 	int g = 1;
 	string s = j.dump(1);
 	i.close();
-	for (auto& x : j["movies"].items()) {
+	for (auto& x : movies.items()) {
 		cout << g << "Movie" << endl;
 		string name = x.value()["name"];
 		int k = x.value()["length"];
